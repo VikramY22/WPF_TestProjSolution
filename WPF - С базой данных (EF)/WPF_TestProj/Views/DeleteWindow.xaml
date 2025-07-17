@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPF_TestProj.Views.DeleteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Удаление данных" Height="380" Width="400">
+    <StackPanel Margin="20">
+        <TextBlock Text="Удалить город:"/>
+        <ComboBox x:Name="CityComboBox" DisplayMemberPath="Name"/>
+        <Button Content="Удалить город" Click="DeleteCity_Click" Margin="0,5,0,15"/>
+
+        <TextBlock Text="Удалить цех:"/>
+        <ComboBox x:Name="WorkshopComboBox" DisplayMemberPath="Name"/>
+        <Button Content="Удалить цех" Click="DeleteWorkshop_Click" Margin="0,5,0,15"/>
+
+        <TextBlock Text="Удалить бригаду:"/>
+        <ComboBox x:Name="BrigadeComboBox" DisplayMemberPath="Name"/>
+        <Button Content="Удалить бригаду" Click="DeleteBrigade_Click" Margin="0,5,0,15"/>
+
+        <TextBlock Text="Удалить сотрудника:"/>
+        <ComboBox x:Name="EmployeeComboBox" DisplayMemberPath="Name"/>
+        <Button Content="Удалить сотрудника" Click="DeleteEmployee_Click" Margin="0,5,0,0"/>
+    </StackPanel>
+</Window>
